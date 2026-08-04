@@ -2,7 +2,7 @@
 -- Troque o e-mail abaixo pelo e-mail real do administrador.
 update public.profiles
 set role = 'superadmin', full_name = 'Administrador CALAMARE'
-where id = (select id from auth.users where email = 'SEU-EMAIL@EXEMPLO.COM');
+where id = (select id from auth.users where email = 'joaovictor.santoscaldeira@gmail.com');
 
 -- Dados demonstrativos editáveis (opcional)
 insert into public.clients (name, email, phone, management_fee_value)
