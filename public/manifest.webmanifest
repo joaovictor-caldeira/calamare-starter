@@ -1,6 +1,6 @@
 {
-  "name": "CALAMARE PMS",
-  "short_name": "CALAMARE",
+  "name": "JOCA Gerenciamento Imobiliário",
+  "short_name": "JOCA",
   "description": "Gestão de imóveis por temporada",
   "start_url": "/dashboard",
   "display": "standalone",

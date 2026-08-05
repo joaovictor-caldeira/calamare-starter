@@ -10,9 +10,9 @@ export default async function LoginPage({
   return (
     <main className="loginPage">
       <section className="loginCard">
-        <div className="loginBrand"><span className="brandMark large">C</span></div>
+        <div className="loginBrand"><span className="brandMark large">J</span></div>
         <p className="eyebrow">BEM-VINDO À</p>
-        <h1>CALAMARE</h1>
+        <h1>JOCA</h1>
         <p className="muted center">Administração inteligente de hospedagens</p>
         {params.erro && <div className="alert error">{params.erro}</div>}
         <form action={loginAction} className="formStack">

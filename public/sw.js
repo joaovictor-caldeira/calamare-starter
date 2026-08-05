@@ -1,4 +1,4 @@
-const CACHE = 'calamare-shell-v1'
+const CACHE = 'joca-shell-v2'
 const SHELL = ['/login', '/manifest.webmanifest', '/icons/icon-192.png']
 
 self.addEventListener('install', event => {

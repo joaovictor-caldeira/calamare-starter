@@ -15,8 +15,8 @@ export function Sidebar({ name, role }: { name: string; role: string }) {
     <aside className="sidebar">
       <div>
         <div className="brand">
-          <span className="brandMark">C</span>
-          <div><strong>CALAMARE</strong><small>Gestão de hospedagens</small></div>
+          <span className="brandMark">J</span>
+          <div><strong>JOCA</strong><small>Gestão de hospedagens</small></div>
         </div>
         <nav className="nav">
           {links.map(([label, href, icon]) => (

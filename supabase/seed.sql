@@ -1,7 +1,7 @@
 -- Execute somente depois de criar o primeiro usuário no Supabase Auth.
 -- Troque o e-mail abaixo pelo e-mail real do administrador.
 update public.profiles
-set role = 'superadmin', full_name = 'Administrador CALAMARE'
+set role = 'superadmin', full_name = 'Administrador JOCA'
 where id = (select id from auth.users where email = 'joaovictor.santoscaldeira@gmail.com');
 
 -- Dados demonstrativos editáveis (opcional)

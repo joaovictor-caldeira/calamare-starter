@@ -3,7 +3,7 @@ import './globals.css'
 import { PWARegister } from '@/components/PWARegister'
 
 export const metadata: Metadata = {
-  title: 'CALAMARE PMS',
+  title: 'JOCA Gerenciamento Imobiliário',
   description: 'Gestão de imóveis por temporada',
   manifest: '/manifest.webmanifest',
   icons: {
