@@ -8,6 +8,12 @@ const links = [
   ['Clientes', '/clientes', '◎'],
   ['Imóveis e unidades', '/unidades', '⌂'],
   ['Financeiro', '/financeiro', 'R$'],
+  ['Fechamentos', '/fechamentos', '✓'],
+  ['Relatórios', '/relatorios', '▤'],
+  ['Limpezas', '/limpezas', '✦'],
+  ['Manutenções', '/manutencoes', '⚙'],
+  ['Inventário', '/inventario', '□'],
+  ['Auditoria', '/auditoria', '◷'],
 ]
 
 export function Sidebar({ name, role }: { name: string; role: string }) {
@@ -16,7 +22,7 @@ export function Sidebar({ name, role }: { name: string; role: string }) {
       <div>
         <div className="brand">
           <span className="brandMark">J</span>
-          <div><strong>JOCA</strong><small>Gestão de hospedagens</small></div>
+          <div><strong>JOCA</strong><small>Gerenciamento Imobiliário</small></div>
         </div>
         <nav className="nav">
           {links.map(([label, href, icon]) => (

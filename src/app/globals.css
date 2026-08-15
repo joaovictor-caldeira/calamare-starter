@@ -119,3 +119,91 @@ tbody tr:hover { background: #fafcfb; }
   .panel { padding: 16px; border-radius: 13px; }
   .loginCard { padding: 28px 22px; }
 }
+
+/* Ciclos 2 a 5 */
+.button.secondary { background: #edf3f2; color: var(--navy); border: 1px solid #cfddda; }
+.button.secondary:hover { background: #e1ece9; }
+.button.danger { background: #a33939; color: white; }
+.button.danger:hover { background: #8b2f2f; }
+.button.small { padding: 7px 10px; font-size: 12px; }
+.button.disabled, .button[aria-disabled="true"] { opacity: .45; pointer-events: none; }
+.linkButton { display: inline-flex; align-items: center; justify-content: center; }
+.tableLink { color: var(--petrol); font-weight: 750; text-decoration: underline; text-underline-offset: 3px; }
+.span2 { grid-column: span 2; }
+.filters { display: flex; flex-wrap: wrap; gap: 12px; align-items: end; margin-bottom: 18px; }
+.filters label { min-width: 170px; flex: 1 1 170px; }
+.filters .button { min-height: 42px; }
+.pagination { display: flex; gap: 14px; justify-content: center; align-items: center; padding-top: 20px; color: var(--muted); }
+.actionRow { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.inlineForm { display: flex; flex-wrap: wrap; align-items: end; gap: 10px; }
+.inlineForm input, .inlineForm select { min-width: 150px; }
+.topGap { margin-top: 18px; }
+.dangerZone { border-color: #e8c3c3; display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+.cardList { display: grid; gap: 10px; }
+.miniCard { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; gap: 16px; align-items: center; border: 1px solid var(--line); border-radius: 12px; padding: 14px; }
+.miniCard strong, .miniCard small { display: block; }
+.miniCard small { color: var(--muted); margin-top: 3px; }
+.summaryGrid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 12px; margin-bottom: 20px; }
+.summaryGrid > div { background: white; border: 1px solid var(--line); border-radius: 13px; padding: 16px; box-shadow: var(--shadow); }
+.summaryGrid small, .summaryGrid strong { display: block; }
+.summaryGrid small { color: var(--muted); margin-bottom: 7px; }
+.summaryGrid strong { color: var(--navy); font-size: 18px; }
+.tabBar { display: flex; gap: 8px; margin-bottom: 20px; overflow-x: auto; }
+.tabBar a { padding: 10px 14px; background: white; border: 1px solid var(--line); border-radius: 10px; color: var(--muted); white-space: nowrap; }
+.tabBar a.active, .tabBar a:hover { background: var(--navy); color: white; border-color: var(--navy); }
+.timeline { display: grid; gap: 12px; }
+.timelineItem { display: grid; grid-template-columns: 180px 1fr auto; gap: 14px; align-items: start; border-left: 3px solid var(--petrol); padding: 10px 12px; background: #f8fbfa; border-radius: 0 10px 10px 0; }
+.timelineItem strong, .timelineItem small { display: block; }
+.timelineItem p { margin: 0; }
+.checkList { display: grid; gap: 9px; }
+.checkItem { display: flex; align-items: center; gap: 12px; border: 1px solid var(--line); border-radius: 10px; padding: 11px 13px; background: #fbfcfc; }
+.checkItem.done { background: #eaf5ef; color: #286346; }
+.checkItem.done strong { text-decoration: line-through; opacity: .75; }
+.checkToggle { width: 30px; height: 30px; border-radius: 50%; border: 1px solid #bfd1cc; background: white; color: var(--petrol); font-weight: 900; }
+.photoGrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 9px; }
+.photoGrid img { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 9px; border: 1px solid var(--line); }
+.quickLinks { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.quickLinks a { background: #f1f6f4; border: 1px solid #dce7e4; border-radius: 10px; padding: 14px; color: var(--navy); font-weight: 750; }
+.calendarCell.maintenance { background: #fff0d8; color: #8d5c16; }
+.dot.maintenance { background: #e6a348; }
+.reportDocument { max-width: 1100px; margin: 0 auto; background: white; padding: 36px; border: 1px solid var(--line); border-radius: 16px; box-shadow: var(--shadow); }
+.reportActions { display: flex; justify-content: flex-end; gap: 10px; margin-bottom: 28px; }
+.reportHeader { display: flex; justify-content: space-between; gap: 30px; border-bottom: 2px solid var(--navy); padding-bottom: 22px; margin-bottom: 24px; }
+.reportHeader > div:last-child { text-align: right; display: grid; gap: 8px; justify-items: end; }
+.reportSummary { margin-bottom: 28px; }
+.reportSection { margin: 28px 0; break-inside: avoid; }
+.reportSection table { min-width: 0; }
+.reportFooter { border-top: 1px solid var(--line); padding-top: 18px; margin-top: 30px; color: var(--muted); font-size: 12px; }
+
+@media (max-width: 1100px) {
+  .summaryGrid { grid-template-columns: repeat(3, 1fr); }
+  .timelineItem { grid-template-columns: 150px 1fr; }
+  .timelineItem > small { grid-column: 2; }
+}
+
+@media (max-width: 760px) {
+  .span2 { grid-column: span 1; }
+  .filters, .inlineForm, .dangerZone { align-items: stretch; flex-direction: column; }
+  .filters label, .inlineForm input, .inlineForm select { width: 100%; min-width: 0; }
+  .pagination { justify-content: space-between; }
+  .miniCard { grid-template-columns: 1fr; }
+  .summaryGrid { grid-template-columns: repeat(2, 1fr); }
+  .photoGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .quickLinks { grid-template-columns: 1fr; }
+  .timelineItem { grid-template-columns: 1fr; }
+  .timelineItem > small { grid-column: auto; }
+  .reportDocument { padding: 20px 14px; border: 0; border-radius: 0; }
+  .reportHeader { flex-direction: column; }
+  .reportHeader > div:last-child { text-align: left; justify-items: start; }
+}
+
+@media print {
+  body { background: white; }
+  .sidebar, .noPrint, .reportActions { display: none !important; }
+  .appShell { display: block; }
+  .content { padding: 0; }
+  .reportDocument { max-width: none; border: 0; box-shadow: none; padding: 0; }
+  .summaryGrid > div { box-shadow: none; }
+  .reportSection { break-inside: avoid; }
+  @page { size: A4; margin: 12mm; }
+}
